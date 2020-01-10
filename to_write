@@ -1,0 +1,7 @@
+su -u user -p password (null and default)
+
+ldd (shared library for binary)
+
+rpath
+
+mysql root user 

